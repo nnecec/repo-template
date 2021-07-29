@@ -1,6 +1,8 @@
 # @n-kit/repo-template
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![Build status](https://badgen.net/github/checks/n-kit/repo-template)](https://github.com/n-kit/repo-template/actions/)
+[![License](https://badgen.net/github/license/n-kit/repo-template)](https://github.com/n-kit/repo-template/blob/master/LICENSE)
 
 ## Features
 
