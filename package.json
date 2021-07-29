@@ -1,7 +1,7 @@
 {
   "name": "@n-kit/repo-template",
   "version": "0.0.1",
-  "description": "",
+  "description": "a template repo to build NPM package with normalized tools.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
@@ -12,6 +12,7 @@
     "dist",
     "src"
   ],
+  "author": "nnecec<nnecec@outlook.coom>",
   "keywords": [
     "react",
     "typescript",
