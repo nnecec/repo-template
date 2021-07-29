@@ -7,8 +7,7 @@
 - Use [TSDX](https://github.com/formium/tsdx) to develop, build, test.
 - Use ESLint to lint.
 - Use [commitizen](https://github.com/commitizen/cz-cli), [commitlint](https://github.com/conventional-changelog/commitlint) to limit input commit messages.
-- Use [@changesets/cli](https://github.com/atlassian/changesets) to generate changelog.
-- Use [semantic-release](https://github.com/semantic-release/semantic-release) to automatic set version.
+- Use [@changesets/cli](https://github.com/atlassian/changesets) to generate changelog, version.
 - Use husky, lint-staged to automatic trigger lint, set semver version and more.
 - Base on yarn@berry to manage dependencies.
 
