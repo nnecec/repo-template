@@ -14,13 +14,13 @@
 ## Get started
 
 0. Click `Use this template`, and clone your repo.
-1. Search `@n-kit/repo-template`, then replace all with your module name.
+1. Search `@n-kit/repo-template`, `n-kit/repo-template`, then replace all with your module name.
 
 then it'll be your repository totally.
 
 ## Usage
 
-- 
+-
 
 ## Presets
 
@@ -42,3 +42,9 @@ then it'll be your repository totally.
   ```
 
 - tsconfig.json: `"module": "esnext"`
+
+## Contributors
+
+This project exists thanks to all the people who contribute.
+
+<a href="https://github.com/n-kit/repo-template/graphs/contributors"><img src="https://contrib.rocks/image?repo=n-kit/repo-template" /></a>

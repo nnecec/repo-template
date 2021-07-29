@@ -4,6 +4,7 @@ module.exports = {
     es2021: true
   },
   extends: [
+    'react-app',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'standard'
@@ -21,5 +22,15 @@ module.exports = {
     '@typescript-eslint'
   ],
   rules: {
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': [
+      'warn',
+      {
+        functions: false,
+        classes: false,
+        variables: false,
+        typedefs: false
+      }
+    ]
   }
 }
