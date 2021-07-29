@@ -4,11 +4,42 @@
 
 ## Features
 
-- [TSDX](https://github.com/formium/tsdx)
-- ESLint
-- commitizen, commitlint
-- husky, lint-staged
+- Use [TSDX](https://github.com/formium/tsdx) to develop, build, test.
+- Use ESLint to lint.
+- Use [commitizen](https://github.com/commitizen/cz-cli), [commitlint](https://github.com/conventional-changelog/commitlint) to limit input commit messages.
+- Use [@changesets/cli](https://github.com/atlassian/changesets) to generate changelog.
+- Use [semantic-release](https://github.com/semantic-release/semantic-release) to automatic set version.
+- Use husky, lint-staged to automatic trigger lint, set semver version and more.
+- Base on yarn@berry to manage dependencies.
 
-## Replace with your module name
+## Get started
 
-Search `@n-kit/repo-template`, replace all with your module name, then it'll be your repo!
+0. Click `Use this template`, and clone your repo.
+1. Search `@n-kit/repo-template`, then replace all with your module name.
+
+then it'll be your repository totally.
+
+## Usage
+
+- 
+
+## Presets
+
+- .yarnrc.yml: `npmRegistryServer: "https://registry.npm.taobao.org/"`
+- commitlint.config.js: `extends: ['@commitlint/config-conventional']`
+- .gitignore:
+
+  ```
+  /package-lock.json
+  **/yarn.lock
+  ```
+
+- peerDependencies:
+
+  ```json
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0"
+  },
+  ```
+
+- tsconfig.json: `"module": "esnext"`
