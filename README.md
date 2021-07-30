@@ -9,8 +9,8 @@
 - Use [TSDX](https://github.com/formium/tsdx) to develop, build, test.
 - Use ESLint to lint.
 - Use [commitizen](https://github.com/commitizen/cz-cli), [commitlint](https://github.com/conventional-changelog/commitlint) to limit input commit messages.
-- Use [@changesets/cli](https://github.com/atlassian/changesets) to generate changelog, version.
-- Use husky, lint-staged to automatic trigger lint, set semver version and more.
+- Use [@changesets/cli](https://github.com/atlassian/changesets) to generate changelog, manage versions.
+- Use husky to automatic trigger git hooks.
 - Base on yarn@berry to manage dependencies.
 
 ## Get started
@@ -28,13 +28,6 @@ then it'll be your repository totally.
 
 - .yarnrc.yml: `npmRegistryServer: "https://registry.npm.taobao.org/"`
 - commitlint.config.js: `extends: ['@commitlint/config-conventional']`
-- .gitignore:
-
-  ```
-  /package-lock.json
-  **/yarn.lock
-  ```
-
 - peerDependencies:
 
   ```json
