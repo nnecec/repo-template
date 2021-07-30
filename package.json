@@ -1,6 +1,6 @@
 {
   "name": "@n-kit/repo-template",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a template repo to build NPM package with normalized tools.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
