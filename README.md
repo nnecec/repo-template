@@ -11,6 +11,7 @@
 - Use [commitizen](https://github.com/commitizen/cz-cli), [commitlint](https://github.com/conventional-changelog/commitlint) to limit input commit messages.
 - Use [@changesets/cli](https://github.com/atlassian/changesets) to generate changelog, manage versions.
 - Use husky to automatic trigger git hooks.
+- Use [docz](https://github.com/doczjs/docz) to write document, develop.
 - Base on yarn@berry to manage dependencies.
 
 ## Get started

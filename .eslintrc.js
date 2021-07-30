@@ -4,7 +4,6 @@ module.exports = {
     es2021: true
   },
   extends: [
-    'react-app',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'standard'

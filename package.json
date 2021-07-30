@@ -2,6 +2,12 @@
   "name": "@n-kit/repo-template",
   "version": "0.0.2",
   "description": "a template repo to build NPM package with normalized tools.",
+  "keywords": [
+    "react",
+    "typescript",
+    "template"
+  ],
+  "author": "nnecec<nnecec@outlook.coom>",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
@@ -12,13 +18,10 @@
     "dist",
     "src"
   ],
-  "author": "nnecec<nnecec@outlook.coom>",
-  "keywords": [
-    "react",
-    "typescript",
-    "template"
-  ],
   "scripts": {
+    "doc:dev": "docz dev",
+    "doc:build": "docz build",
+    "doc:serve": "docz build && docz serve",
     "build": "tsdx build --name index",
     "lint": "eslint src/**/*",
     "start": "tsdx watch --noClean --name index",
@@ -45,12 +48,10 @@
     "@typescript-eslint/parser": "^4.28.5",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
+    "docz": "^2.3.1",
     "eslint": "^7.31.0",
-    "eslint-config-react-app": "^6.0.0",
     "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-flowtype": "^5.8.2",
     "eslint-plugin-import": "^2.23.4",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.24.0",
