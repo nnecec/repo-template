@@ -9,7 +9,7 @@
 - Use [TSDX](https://github.com/formium/tsdx) to develop, build, test.
 - Use ESLint to lint.
 - Use [commitizen](https://github.com/commitizen/cz-cli), [commitlint](https://github.com/conventional-changelog/commitlint) to limit input commit messages.
-- Use [@changesets/cli](https://github.com/atlassian/changesets) to generate changelog, manage versions.
+- Use [@changesets/cli](https://github.com/atlassian/changesets) to generate changelog, manage versions, and publish.
 - Use husky to automatic trigger git hooks.
 - Use [docz](https://github.com/doczjs/docz) to write document, develop.
 - Base on yarn@berry to manage dependencies.
@@ -23,7 +23,12 @@ then it'll be your repository totally.
 
 ## Usage
 
--
+0. write your code.
+1. execute `npm run changeset` or `yarn changeset` to add a changeset, then execute `git commit`, will trigger `commitzen`.
+2. push your branch, then visit your github repo, create a PR
+3. if actions complete, confirm merge.
+4. changeset/actions will create a `Version Packages` PR.
+5. confirm merge `Version Packages` PR will trigger `changeset publish`, it's really publish.
 
 ## Presets
 
