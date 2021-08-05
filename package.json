@@ -19,19 +19,19 @@
     "src"
   ],
   "scripts": {
-    "doc:dev": "docz dev",
-    "doc:build": "docz build",
-    "doc:serve": "docz build && docz serve",
     "build": "tsdx build --name index",
-    "lint": "eslint src/**/*",
-    "start": "tsdx watch --noClean --name index",
-    "test": "tsdx test",
-    "test:coverage": "tsdx test --coverage",
-    "release": "npm run build && changeset publish",
+    "changeset": "changeset",
+    "doc:build": "docz build",
+    "doc:dev": "docz dev",
+    "doc:serve": "docz build && docz serve",
     "postinstall": "husky install",
+    "lint": "eslint src/**/*",
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable",
-    "changeset": "changeset"
+    "release": "npm run build && changeset publish",
+    "start": "tsdx watch --noClean --name index",
+    "test": "tsdx test",
+    "test:coverage": "tsdx test --coverage"
   },
   "config": {
     "commitizen": {
@@ -66,5 +66,6 @@
   },
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0"
-  }
+  },
+  "packageManager": "yarn@3.0.0"
 }
