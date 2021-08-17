@@ -28,5 +28,4 @@ yarn.lock
 .DS_Store
 
 # ide
-/.vscode
 /.idea
