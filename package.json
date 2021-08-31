@@ -8,7 +8,7 @@
     "template"
   ],
   "author": "nnecec<nnecec@outlook.coom>",
-  "main": "dist/index.js",
+  "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
@@ -19,7 +19,7 @@
     "src"
   ],
   "scripts": {
-    "build": "tsdx build --name index",
+    "build": "vite build && tsc --emitDeclarationOnly --project tsconfig.json",
     "changeset": "changeset",
     "doc:build": "docz build",
     "doc:dev": "docz dev",
@@ -29,9 +29,8 @@
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable",
     "release": "npm run build && changeset publish",
-    "start": "tsdx watch --noClean --name index",
-    "test": "tsdx test",
-    "test:coverage": "tsdx test --coverage"
+    "start": "vite",
+    "test": "jest --coverage"
   },
   "config": {
     "commitizen": {
@@ -43,26 +42,36 @@
     "@changesets/cli": "^2.16.0",
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.6",
     "@types/react": "^17.0.19",
-    "@typescript-eslint/eslint-plugin": "^4.29.3",
-    "@typescript-eslint/parser": "^4.29.3",
+    "@typescript-eslint/eslint-plugin": "^4.30.0",
+    "@typescript-eslint/parser": "^4.30.0",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
     "docz": "^2.3.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "enzyme-to-json": "^3.6.2",
     "eslint": "^7.32.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
-    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react": "^7.25.1",
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^7.0.2",
     "is-ci": "^3.0.0",
+    "jest": "^27.1.0",
     "lint-staged": "^11.1.2",
     "pinst": "^2.1.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "tsdx": "^0.14.1"
+    "ts-jest": "^27.0.5",
+    "typescript": "^4.4.2",
+    "vite": "^2.5.2"
   },
   "peerDependencies": {
     "react": "^17.0.2",

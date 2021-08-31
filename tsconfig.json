@@ -6,12 +6,13 @@
     "declaration": true,
     "sourceMap": true,
     "strict": true,
-    "noUnusedLocals": false,
-    "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "moduleResolution": "node",
     "jsx": "react",
     "esModuleInterop": true,
-    "noImplicitAny": false
-  }
+    "noImplicitAny": false,
+    "outDir": "./dist"
+  },
+  "include": ["src", "types"],
+  "exclude": ["node_modules", "./src/**/__tests__/*"]
 }
