@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
+import typescript from 'rollup-plugin-typescript2'
 import pkg from './package.json'
 
 export default defineConfig({
@@ -11,7 +12,12 @@ export default defineConfig({
       fileName: 'index'
     },
     rollupOptions: {
-      external: pkg?.dependencies ? Object.keys(pkg.dependencies) : {}
+      external: pkg?.dependencies ? Object.keys(pkg.dependencies) : {},
+      plugins: [
+        typescript({
+          tsconfig: 'tsconfig.json'
+        })
+      ]
     }
   }
 })

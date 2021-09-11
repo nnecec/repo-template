@@ -19,7 +19,7 @@
     "src"
   ],
   "scripts": {
-    "build": "vite build && tsc --emitDeclarationOnly --project tsconfig.json",
+    "build": "vite build",
     "changeset": "changeset",
     "doc:build": "docz build",
     "doc:dev": "docz dev",
@@ -29,7 +29,7 @@
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable",
     "release": "npm run build && changeset publish",
-    "start": "vite",
+    "start": "vite build --watch",
     "test": "jest --coverage"
   },
   "config": {
@@ -37,15 +37,18 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
+  "dependencies": {
+    "react": "^17.0.2"
+  },
   "devDependencies": {
-    "@changesets/changelog-github": "^0.4.0",
-    "@changesets/cli": "^2.16.0",
+    "@changesets/changelog-github": "^0.4.1",
+    "@changesets/cli": "^2.17.0",
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@types/jest": "^27.0.1",
-    "@types/node": "^16.7.6",
+    "@types/node": "^16.7.10",
     "@types/react": "^17.0.19",
     "@typescript-eslint/eslint-plugin": "^4.30.0",
     "@typescript-eslint/parser": "^4.30.0",
@@ -67,11 +70,10 @@
     "jest": "^27.1.0",
     "lint-staged": "^11.1.2",
     "pinst": "^2.1.6",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "rollup-plugin-typescript2": "^0.30.0",
     "ts-jest": "^27.0.5",
     "typescript": "^4.4.2",
-    "vite": "^2.5.2"
+    "vite": "^2.5.3"
   },
   "peerDependencies": {
     "react": "^17.0.2",
