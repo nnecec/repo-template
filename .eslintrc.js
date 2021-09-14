@@ -5,6 +5,7 @@ module.exports = {
     jest: true
   },
   extends: [
+    'plugin:unicorn/recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'standard'
@@ -31,6 +32,7 @@ module.exports = {
         variables: false,
         typedefs: false
       }
-    ]
+    ],
+    'unicorn/prefer-module': 'off'
   }
 }
