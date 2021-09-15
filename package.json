@@ -18,6 +18,9 @@
     "dist",
     "src"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "vite build",
     "changeset": "changeset",
@@ -29,7 +32,7 @@
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable",
     "release": "npm run build && changeset publish",
-    "start": "vite build --watch",
+    "start": "vite build --watch --mode development",
     "test": "jest --coverage"
   },
   "config": {
@@ -46,6 +49,7 @@
     "@changesets/cli": "^2.17.0",
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
+    "@rollup/plugin-typescript": "^8.2.5",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.1.0",
     "@types/jest": "^27.0.1",
@@ -57,7 +61,6 @@
     "cz-conventional-changelog": "^3.3.0",
     "docz": "^2.3.1",
     "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.6",
     "enzyme-to-json": "^3.6.2",
     "eslint": "^7.32.0",
     "eslint-config-standard": "^16.0.3",
@@ -72,7 +75,6 @@
     "jest": "^27.2.0",
     "lint-staged": "^11.1.2",
     "pinst": "^2.1.6",
-    "rollup-plugin-typescript2": "^0.30.0",
     "ts-jest": "^27.0.5",
     "typescript": "^4.4.3",
     "vite": "^2.5.7"

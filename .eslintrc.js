@@ -33,6 +33,7 @@ module.exports = {
         typedefs: false
       }
     ],
-    'unicorn/prefer-module': 'off'
+    'unicorn/prefer-module': 'off',
+    'unicorn/prefer-node-protocol': 'off'
   }
 }
