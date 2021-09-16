@@ -1,6 +1,6 @@
 {
   "name": "@n-kit/repo-template",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "a template repo to build NPM package with normalized tools.",
   "keywords": [
     "react",
@@ -54,7 +54,8 @@
     "@testing-library/react": "^12.1.0",
     "@types/jest": "^27.0.1",
     "@types/node": "^16.9.1",
-    "@types/react": "^17.0.20",
+    "@types/react": "^17.0.21",
+    "@types/react-dom": "^17.0.9",
     "@typescript-eslint/eslint-plugin": "^4.31.1",
     "@typescript-eslint/parser": "^4.31.1",
     "commitizen": "^4.2.4",
