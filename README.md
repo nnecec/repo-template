@@ -6,12 +6,12 @@
 
 ## Features
 
-- Use [TSDX](https://github.com/formium/tsdx) to develop, build, test.
-- Use ESLint to lint.
-- Use [commitizen](https://github.com/commitizen/cz-cli), [commitlint](https://github.com/conventional-changelog/commitlint) to limit input commit messages.
-- Use [@changesets/cli](https://github.com/atlassian/changesets) to generate changelog, manage versions, and publish.
-- Use husky to automatic trigger git hooks.
-- Use [docz](https://github.com/doczjs/docz) to write document, develop.
+- `Vite` to develop, build.
+- `ESLint` to lint, `Jest` to test.
+- [commitizen](https://github.com/commitizen/cz-cli), [commitlint](https://github.com/conventional-changelog/commitlint) to limit commit messages.
+- [@changesets/cli](https://github.com/atlassian/changesets) to generate changelog, manage versions, and publish.
+- use Husky to automatic trigger git hooks.
+- Use [docz](https://github.com/doczjs/docz) to write document.
 - Base on yarn@berry to manage dependencies.
 
 ## Get started
@@ -21,28 +21,26 @@
 
 then it'll be your repository totally.
 
-## Usage
+## Tips
 
-0. write your code.
-1. execute `npm run changeset` or `yarn changeset` to add a changeset, then execute `git commit`, will trigger `commitzen`.
-2. push your branch, then visit your github repo, create a PR
-3. if actions complete, confirm merge.
-4. changeset/actions will create a `Version Packages` PR.
-5. confirm merge `Version Packages` PR will trigger `changeset publish`, it's really publish.
+0. Execute `npm run changeset` or `yarn changeset` to add a changeset, then execute `git commit`, this command will trigger `lint-staged` and `commitzen`.
+1. If you create a PR merge to main, `changeset/actions` will create a `Version Packages` PR. confirm merge `Version Packages` PR will trigger `changeset publish`, it's really publish.
 
-## Presets
+## Preset configs
 
-- .yarnrc.yml: `npmRegistryServer: "https://registry.npm.taobao.org/"`
-- commitlint.config.js: `extends: ['@commitlint/config-conventional']`
-- peerDependencies:
+- `.yarnrc.yml`: `npmRegistryServer: "https://registry.npm.taobao.org/"`
+- `commitlint.config.js`: `extends: ['@commitlint/config-conventional']`
+- `peerDependencies`:
 
   ```json
   "peerDependencies": {
-    "react": "^16.8.0 || ^17.0.0"
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
   },
   ```
 
-- tsconfig.json: `"module": "esnext"`
+- `tsconfig.json`: `"module": "esnext"`
+- `vite.config.ts`: `target: 'esnext'`
 
 ## Contributors
 
