@@ -1,6 +1,6 @@
 {
   "name": "@n-kit/repo-template",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "a template repo to build NPM package with normalized tools.",
   "keywords": [
     "react",
