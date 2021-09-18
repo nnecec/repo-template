@@ -14,6 +14,8 @@
 - Use [docz](https://github.com/doczjs/docz) to write document.
 - Base on yarn@berry to manage dependencies.
 
+if you need `monorepo`, here is single [monorepo-template](https://github.com/n-kit/monorepo-template)
+
 ## Get started
 
 0. Click `Use this template`, and clone your repo.
