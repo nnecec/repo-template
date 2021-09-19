@@ -1,6 +1,7 @@
 import { defineConfig, UserConfig } from 'vite'
 import path from 'path'
 import typescript from '@rollup/plugin-typescript'
+import reactRefresh from '@vitejs/plugin-react-refresh'
 import package_ from './package.json'
 
 export default defineConfig(({ mode }): UserConfig => {
@@ -22,6 +23,9 @@ export default defineConfig(({ mode }): UserConfig => {
           })
         ]
       }
-    }
+    },
+    plugins: [
+      reactRefresh()
+    ]
   }
 })

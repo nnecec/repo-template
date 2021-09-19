@@ -114,7 +114,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:7.15.5::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2F%40babel%2Fcore%2Fdownload%2F%40babel%2Fcore-7.15.5.tgz, @babel/core@npm:^7.0.0, @babel/core@npm:^7.1.0, @babel/core@npm:^7.12.16, @babel/core@npm:^7.12.3, @babel/core@npm:^7.5.5, @babel/core@npm:^7.7.2, @babel/core@npm:^7.7.5":
+"@babel/core@npm:7.15.5::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2F%40babel%2Fcore%2Fdownload%2F%40babel%2Fcore-7.15.5.tgz, @babel/core@npm:^7.0.0, @babel/core@npm:^7.1.0, @babel/core@npm:^7.12.16, @babel/core@npm:^7.12.3, @babel/core@npm:^7.14.8, @babel/core@npm:^7.5.5, @babel/core@npm:^7.7.2, @babel/core@npm:^7.7.5":
   version: 7.15.5
   resolution: "@babel/core@npm:7.15.5::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2F%40babel%2Fcore%2Fdownload%2F%40babel%2Fcore-7.15.5.tgz"
   dependencies:
@@ -1184,6 +1184,28 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.0.0-0
   checksum: b49d6e703aeb4fbaacbb8449418dc3c599bcb3ce608cb900ed21a288c3bce42a33209524693b1978766b645aa2b751c15aa9da5337cc6ac2a79fd9b7c9ae9246
+  languageName: node
+  linkType: hard
+
+"@babel/plugin-transform-react-jsx-self@npm:^7.14.5":
+  version: 7.14.9
+  resolution: "@babel/plugin-transform-react-jsx-self@npm:7.14.9::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2F%40babel%2Fplugin-transform-react-jsx-self%2Fdownload%2F%40babel%2Fplugin-transform-react-jsx-self-7.14.9.tgz"
+  dependencies:
+    "@babel/helper-plugin-utils": ^7.14.5
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 2fa79482c2b00d922857762dc75925e37eec5d8b5e65423262d8ff3644a5ddf47015af17a9ff251e646df471ca5cd664607ec751a96d060e77c11134b6376eb2
+  languageName: node
+  linkType: hard
+
+"@babel/plugin-transform-react-jsx-source@npm:^7.14.5":
+  version: 7.14.5
+  resolution: "@babel/plugin-transform-react-jsx-source@npm:7.14.5::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2F%40babel%2Fplugin-transform-react-jsx-source%2Fdownload%2F%40babel%2Fplugin-transform-react-jsx-source-7.14.5.tgz"
+  dependencies:
+    "@babel/helper-plugin-utils": ^7.14.5
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: e7e7336bbd07d6c1a281bac1b242e8cb8172f3b1e1d9d214160ab220142fbefc5d79786d57bf197b18f4c694edfc7614dddae2f990adb4b7484146635b58dfe6
   languageName: node
   linkType: hard
 
@@ -2841,6 +2863,7 @@ __metadata:
     "@types/react-dom": ^17.0.9
     "@typescript-eslint/eslint-plugin": ^4.31.1
     "@typescript-eslint/parser": ^4.31.1
+    "@vitejs/plugin-react-refresh": ^1.3.6
     commitizen: ^4.2.4
     cz-conventional-changelog: ^3.3.0
     docz: ^2.3.1
@@ -3025,6 +3048,16 @@ __metadata:
   peerDependencies:
     rollup: ^1.20.0||^2.0.0
   checksum: 8be16e27863c219edbb25a4e6ec2fe0e1e451d9e917b6a43cf2ae5bc025a6b8faaa40f82a6e53b66d0de37b58ff472c6c3d57a83037ae635041f8df959d6d9aa
+  languageName: node
+  linkType: hard
+
+"@rollup/pluginutils@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "@rollup/pluginutils@npm:4.1.1::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2F%40rollup%2Fpluginutils%2Fdownload%2F%40rollup%2Fpluginutils-4.1.1.tgz"
+  dependencies:
+    estree-walker: ^2.0.1
+    picomatch: ^2.2.2
+  checksum: 405f681c7d32661980aa3caa928ff22e1c06f0e081db1550e6ab9c179dc9d3d8d63c05dcc7338fe65ab3f856a56c465696a51300b83e98171956fcb141106e39
   languageName: node
   linkType: hard
 
@@ -3923,6 +3956,19 @@ __metadata:
     "@typescript-eslint/types": 4.31.1
     eslint-visitor-keys: ^2.0.0
   checksum: 14a86bf96a41a81feba32f5acbb72539345a33f250b2f17968dc7b9f4ae9eca00209a11dd208b9c6305f5a841a9f809713027c0ed969465e2d62a042d116bdc9
+  languageName: node
+  linkType: hard
+
+"@vitejs/plugin-react-refresh@npm:^1.3.6":
+  version: 1.3.6
+  resolution: "@vitejs/plugin-react-refresh@npm:1.3.6::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2F%40vitejs%2Fplugin-react-refresh%2Fdownload%2F%40vitejs%2Fplugin-react-refresh-1.3.6.tgz"
+  dependencies:
+    "@babel/core": ^7.14.8
+    "@babel/plugin-transform-react-jsx-self": ^7.14.5
+    "@babel/plugin-transform-react-jsx-source": ^7.14.5
+    "@rollup/pluginutils": ^4.1.1
+    react-refresh: ^0.10.0
+  checksum: 013f064abd1b26a483051b80b424848b687b942f01c9e00c3e9065b093d3b32381ff768df8e0c8c446524cce1a3d59df31b26bd2e9d906805f641e3bad5daebe
   languageName: node
   linkType: hard
 
@@ -9434,6 +9480,13 @@ __metadata:
   version: 1.0.1
   resolution: "estree-walker@npm:1.0.1::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2Festree-walker%2Fdownload%2Festree-walker-1.0.1.tgz"
   checksum: 7e70da539691f6db03a08e7ce94f394ce2eef4180e136d251af299d41f92fb2d28ebcd9a6e393e3728d7970aeb5358705ddf7209d52fbcb2dd4693f95dcf925f
+  languageName: node
+  linkType: hard
+
+"estree-walker@npm:^2.0.1":
+  version: 2.0.2
+  resolution: "estree-walker@npm:2.0.2::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2Festree-walker%2Fdownload%2Festree-walker-2.0.2.tgz"
+  checksum: 6151e6f9828abe2259e57f5fd3761335bb0d2ebd76dc1a01048ccee22fabcfef3c0859300f6d83ff0d1927849368775ec5a6d265dde2f6de5a1be1721cd94efc
   languageName: node
   linkType: hard
 
@@ -18721,6 +18774,13 @@ fsevents@^1.2.7:
     react-simple-code-editor: ^0.11.0
     unescape: ^1.0.1
   checksum: f85fe4df12ee89aa3f6cb664507faed53b31825376b6ce4f299cb7c0e977962078e13d181ae5639eee87b70b1d1c9e1c4e4b822a32cd0b8b08982a6fdc37e53a
+  languageName: node
+  linkType: hard
+
+"react-refresh@npm:^0.10.0":
+  version: 0.10.0
+  resolution: "react-refresh@npm:0.10.0::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2Freact-refresh%2Fdownload%2Freact-refresh-0.10.0.tgz"
+  checksum: 089b8ea9ad8038046c0467a2476595eedab9e30620f50daa50e844c81d626de43a44a6a628256ae58e68885d5fe1d7e05074ddfd99ece3808b013d043f0c6030
   languageName: node
   linkType: hard
 

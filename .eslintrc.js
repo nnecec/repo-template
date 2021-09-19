@@ -8,6 +8,7 @@ module.exports = {
     'plugin:unicorn/recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
+    'plugin:react/jsx-runtime',
     'standard'
   ],
   parser: '@typescript-eslint/parser',
