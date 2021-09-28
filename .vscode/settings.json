@@ -1,7 +1,12 @@
 {
-  "editor.formatOnPaste": false,
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
+  "files.exclude": {
+    ".yarn/cache": true
+  },
+  "search.exclude": {
+    ".yarn": true
+  }
 }
