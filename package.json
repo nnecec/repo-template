@@ -19,15 +19,13 @@
     "dist",
     "src"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
+  "workspaces": [
+    ".",
+    "website"
+  ],
   "scripts": {
     "build": "vite build",
     "changeset": "changeset",
-    "doc:build": "docz build",
-    "doc:dev": "docz dev",
-    "doc:serve": "docz build && docz serve",
     "postinstall": "husky install",
     "lint": "eslint src/**/*",
     "prepublishOnly": "pinst --disable",
@@ -52,16 +50,15 @@
     "@commitlint/config-conventional": "^13.2.0",
     "@rollup/plugin-typescript": "^8.2.5",
     "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^12.1.1",
+    "@testing-library/react": "^12.1.2",
     "@types/jest": "^27.0.2",
-    "@types/node": "^16.10.1",
-    "@types/react": "^17.0.24",
+    "@types/node": "^16.10.3",
+    "@types/react": "^17.0.27",
     "@types/react-dom": "^17.0.9",
-    "@typescript-eslint/eslint-plugin": "^4.32.0",
-    "@typescript-eslint/parser": "^4.32.0",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
-    "docz": "^2.3.1",
     "enzyme": "^3.11.0",
     "enzyme-to-json": "^3.6.2",
     "eslint": "^7.32.0",
@@ -69,21 +66,24 @@
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
-    "eslint-plugin-react": "^7.26.0",
+    "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-unicorn": "^36.0.0",
     "husky": "^7.0.2",
     "is-ci": "^3.0.0",
-    "jest": "^27.2.2",
-    "lint-staged": "^11.1.2",
+    "jest": "^27.2.4",
+    "lint-staged": "^11.2.0",
     "pinst": "^2.1.6",
     "ts-jest": "^27.0.5",
     "typescript": "^4.4.3",
-    "vite": "^2.5.10"
+    "vite": "^2.6.5"
   },
   "peerDependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "packageManager": "yarn@3.0.2"
 }

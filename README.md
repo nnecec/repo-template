@@ -11,8 +11,8 @@
 - [commitizen](https://github.com/commitizen/cz-cli), [commitlint](https://github.com/conventional-changelog/commitlint) to limit commit messages.
 - [@changesets/cli](https://github.com/atlassian/changesets) to generate changelog, manage versions, and publish.
 - use Husky to automatic trigger git hooks.
-- Use [docz](https://github.com/doczjs/docz) to write document.
-- Base on yarn@berry to manage dependencies.
+- Use [Docusaurus](https://github.com/facebook/docusaurus) to write document, and web tests.
+- Base on [yarn@berry](https://yarnpkg.com/getting-started) to manage dependencies.
 
 if you need `monorepo`, here is single [monorepo-template](https://github.com/n-kit/monorepo-template)
 
