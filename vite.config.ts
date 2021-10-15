@@ -15,7 +15,7 @@ export default defineConfig(({ mode }): UserConfig => {
         fileName: 'index'
       },
       rollupOptions: {
-        external: package_?.dependencies ? Object.keys(package_.dependencies) : undefined,
+        external: package_.dependencies ? Object.keys(package_.dependencies) : undefined,
         plugins: [
           typescript({
             tsconfig: 'tsconfig.json'

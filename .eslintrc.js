@@ -36,5 +36,10 @@ module.exports = {
     ],
     'unicorn/prefer-module': 'off',
     'unicorn/prefer-node-protocol': 'off'
+  },
+  settings: {
+    react: {
+      version: 'detect'
+    }
   }
 }
