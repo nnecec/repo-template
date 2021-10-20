@@ -1,12 +1,21 @@
 {
-  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "files.exclude": {
-    ".yarn/cache": true
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "postcss": "css"
   },
   "search.exclude": {
-    ".yarn": true
+    "**/.yarn": true,
+    "**/yarn.lock": true
+  },
+  "files.exclude": {
+    "**/.yarn/cache": true
   }
 }
