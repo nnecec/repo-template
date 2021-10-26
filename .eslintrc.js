@@ -1,3 +1,4 @@
+
 module.exports = {
   env: {
     browser: true,
@@ -22,6 +23,15 @@ module.exports = {
   plugins: [
     'react',
     '@typescript-eslint'
+  ],
+  ignorePatterns: [
+    'src/**/__tests__/**',
+    'dist',
+    'coverage',
+    'node_modules',
+    '.yarn',
+    '.changeset',
+    '.husky'
   ],
   rules: {
     'no-use-before-define': 'off',
