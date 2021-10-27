@@ -25,7 +25,6 @@ module.exports = {
     '@typescript-eslint'
   ],
   ignorePatterns: [
-    'src/**/__tests__/**',
     'dist',
     'coverage',
     'node_modules',
