@@ -27,11 +27,11 @@ module.exports = {
     'package.json',
     '/demo/',
     'package-lock.json'
+  ],
+  moduleNameMapper: {
+    '\\.(css|less|scss|sass)$': 'identity-obj-proxy'
+  },
+  transformIgnorePatterns: [
+    '<rootDir>/node_modules'
   ]
-  // transform: {
-  //   '\\.jsx?$': 'babel-jest',
-  // },
-  // transformIgnorePatterns: [
-  //   '<rootDir>/node_modules/(?!(lodash-es))',
-  // ],
 }
