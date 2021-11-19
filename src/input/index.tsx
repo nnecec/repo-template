@@ -1,12 +1,20 @@
 import React, { useState, useRef } from 'react'
 import './index.css'
 
-export interface InputProperties extends React.InputHTMLAttributes<HTMLInputElement> {
+export interface InputProperties
+  extends React.InputHTMLAttributes<HTMLInputElement> {
   onPressEnter?: React.KeyboardEventHandler<HTMLInputElement>
 }
 
-export const Input: React.FC<InputProperties> = ({ onChange, ...properties }) => {
-  const [value, setValue] = useState(typeof properties.value === 'undefined' ? properties.defaultValue : properties.value)
+export const Input: React.FC<InputProperties> = ({
+  onChange,
+  ...properties
+}) => {
+  const [value, setValue] = useState(
+    typeof properties.value === 'undefined'
+      ? properties.defaultValue
+      : properties.value
+  )
   const inputReference = useRef<HTMLInputElement>(null)
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -23,11 +31,13 @@ export const Input: React.FC<InputProperties> = ({ onChange, ...properties }) =>
     onKeyDown?.(event)
   }
 
-  return <input
-    onChange={handleChange}
-    onKeyDown={handleKeyDown}
-    {...properties}
-    value={value}
-    ref={inputReference}
-  />
+  return (
+    <input
+      onChange={handleChange}
+      onKeyDown={handleKeyDown}
+      {...properties}
+      value={value}
+      ref={inputReference}
+    />
+  )
 }

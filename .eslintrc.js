@@ -1,4 +1,3 @@
-
 module.exports = {
   env: {
     browser: true,
@@ -17,13 +16,10 @@ module.exports = {
     ecmaFeatures: {
       jsx: true
     },
-    ecmaVersion: 12,
+    ecmaVersion: 13,
     sourceType: 'module'
   },
-  plugins: [
-    'react',
-    '@typescript-eslint'
-  ],
+  plugins: ['react', '@typescript-eslint'],
   ignorePatterns: [
     'dist',
     'coverage',
