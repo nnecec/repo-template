@@ -25,7 +25,7 @@ export const Input: React.FC<InputProperties> = ({
 
   const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
     const { onPressEnter, onKeyDown } = properties
-    if (onPressEnter && event.keyCode === 13) {
+    if (onPressEnter && event.code === 'Enter') {
       onPressEnter(event)
     }
     onKeyDown?.(event)
