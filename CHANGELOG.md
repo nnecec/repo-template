@@ -1,5 +1,15 @@
 # @n-kit/repo-template
 
+## 0.2.0
+
+### Minor Changes
+
+- [`2ce4d4f`](https://github.com/n-kit/repo-template/commit/2ce4d4f923241d4a018e69582fe7cbfb0085e8f0) Thanks [@nnecec](https://github.com/nnecec)! - finish Input component and unit test. every thing gonna be ok!
+
+### Patch Changes
+
+- [`01f132e`](https://github.com/n-kit/repo-template/commit/01f132ead730cb526f9945257f4ce64afc0ef0ca) Thanks [@nnecec](https://github.com/nnecec)! - upgrade yarn@3.1.0
+
 ## 0.1.0
 
 ### Minor Changes
