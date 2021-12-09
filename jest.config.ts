@@ -8,8 +8,11 @@ export default async (): Promise<Config.InitialOptions> => ({
   setupFilesAfterEnv: [
     require.resolve('@testing-library/jest-dom/extend-expect')
   ],
-  transform: {
-    '^.+\\.(t|j)sx?$': '@swc/jest'
+  preset: 'ts-jest',
+  globals: {
+    'ts-jest': {
+      tsconfig: 'tsconfig.json'
+    }
   },
   extensionsToTreatAsEsm: ['.ts', '.tsx'],
   coveragePathIgnorePatterns: [

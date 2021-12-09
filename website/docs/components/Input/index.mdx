@@ -1,0 +1,29 @@
+---
+title: Input
+---
+
+import BrowserWindow from "@site/src/components/browser-window";
+import { Input } from "@";
+import { ControlledInput } from "./controlled-input";
+
+# Input
+
+## Basic
+
+<BrowserWindow>
+  <Input />
+</BrowserWindow>
+
+## Controlled Input
+
+<BrowserWindow>
+  <ControlledInput />
+</BrowserWindow>
+
+## API
+
+| Property     | Description              | Type                    | Default | Version |
+| ------------ | ------------------------ | ----------------------- | ------- | ------- |
+| value        | input value (controlled) | string                  | -       |         |
+| onChange     | onChange callback        | (e: InputEvent) => void | -       |         |
+| onPressEnter | press enter callback     | (e: InputEvent) => void | -       |         |

@@ -53,10 +53,10 @@ const config = {
           {
             type: 'doc',
             docId: 'intro',
-            position: 'left',
-            label: 'Tutorial'
+            position: 'right',
+            label: 'Documentation'
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
+          { to: '/blog', label: 'Blog', position: 'right' },
           {
             href: 'https://github.com/n-kite/repo-template',
             label: 'GitHub',

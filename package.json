@@ -27,12 +27,10 @@
     "build": "vite build",
     "changeset": "changeset",
     "postinstall": "husky install",
-    "lint": "eslint --ext .jsx,.js,.ts,.tsx src/",
-    "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable",
+    "lint": "tsc --noEmit && eslint --ext .jsx,.js,.ts,.tsx src/",
     "release": "npm run build && changeset publish",
     "start": "vite build --watch --mode development",
-    "test": "jest --coverage"
+    "test": "jest"
   },
   "config": {
     "commitizen": {
@@ -44,27 +42,26 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@changesets/changelog-github": "^0.4.1",
+    "@changesets/changelog-github": "^0.4.2",
     "@changesets/cli": "^2.18.1",
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
     "@rollup/plugin-typescript": "^8.3.0",
-    "@swc/core": "^1.2.117",
-    "@swc/jest": "^0.2.11",
-    "@testing-library/jest-dom": "^5.15.1",
+    "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/react-hooks": "^7.0.2",
     "@types/jest": "^27.0.3",
-    "@types/node": "^16.11.11",
+    "@types/node": "^16.11.12",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
-    "@typescript-eslint/eslint-plugin": "^5.5.0",
-    "@typescript-eslint/parser": "^5.5.0",
+    "@types/source-map-support": "^0",
+    "@typescript-eslint/eslint-plugin": "^5.6.0",
+    "@typescript-eslint/parser": "^5.6.0",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
     "enzyme": "^3.11.0",
     "enzyme-to-json": "^3.6.2",
-    "eslint": "^8.3.0",
+    "eslint": "^8.4.1",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-node": "^11.1.0",
@@ -77,10 +74,10 @@
     "is-ci": "^3.0.1",
     "jest": "^27.4.3",
     "lint-staged": "^12.1.2",
-    "pinst": "^2.1.6",
-    "ts-jest": "^27.0.7",
+    "ts-jest": "^27.1.1",
+    "tslib": "^2.3.1",
     "typescript": "^4.5.2",
-    "vite": "^2.6.14"
+    "vite": "^2.7.1"
   },
   "peerDependencies": {
     "react": "^17.0.2",

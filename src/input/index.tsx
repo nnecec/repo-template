@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import './index.css'
 
 export interface InputProperties
@@ -15,12 +15,18 @@ export const Input: React.FC<InputProperties> = ({
       ? properties.defaultValue
       : properties.value
   )
+  useEffect(() => {
+    if (properties.value !== undefined || properties.value !== value) {
+      setValue(properties.value)
+    }
+  }, [properties.value, value])
+
   const inputReference = useRef<HTMLInputElement>(null)
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value
     setValue(value)
-    onChange?.(event)
+    if (onChange) onChange(event)
   }
 
   const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
@@ -28,14 +34,14 @@ export const Input: React.FC<InputProperties> = ({
     if (onPressEnter && event.code === 'Enter') {
       onPressEnter(event)
     }
-    onKeyDown?.(event)
+    if (onKeyDown) onKeyDown(event)
   }
 
   return (
     <input
+      {...properties}
       onChange={handleChange}
       onKeyDown={handleKeyDown}
-      {...properties}
       value={value}
       ref={inputReference}
     />

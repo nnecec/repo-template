@@ -11,8 +11,9 @@
     "jsx": "react-jsx",
     "esModuleInterop": true,
     "noImplicitAny": false,
+    "skipLibCheck": true,
     "outDir": "./dist"
   },
-  "include": ["src", "types"],
+  "include": ["src", "types", "./jest-setup.ts"],
   "exclude": ["node_modules", "./src/**/__tests__/*"]
 }
