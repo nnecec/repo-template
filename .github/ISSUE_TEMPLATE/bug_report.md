@@ -1,5 +1,5 @@
 ---
-name: Bug report
+name: Bug
 about: Create a report if you having any problems using the package
 title: ''
 labels: ''

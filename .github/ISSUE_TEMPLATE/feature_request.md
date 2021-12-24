@@ -1,5 +1,5 @@
 ---
-name: Feature request
+name: Feature
 about: Have an idea? Great! Let us know, maybe we`ve been waiting only for you =)
 title: ''
 labels: ''
