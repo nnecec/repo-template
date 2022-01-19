@@ -7,7 +7,7 @@
 ## Features
 
 - `Vite` to develop, build.
-- `ESLint` to lint, `Jest` to test.
+- `ESLint` to lint, `Vitest` to test.
 - [commitizen](https://github.com/commitizen/cz-cli), [commitlint](https://github.com/conventional-changelog/commitlint) to limit commit messages.
 - [@changesets/cli](https://github.com/atlassian/changesets) to generate changelog, manage versions, and publish.
 - use Husky to automatic trigger git hooks.

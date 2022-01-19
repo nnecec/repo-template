@@ -1,9 +1,10 @@
-import { defineConfig, UserConfig } from 'vite'
+import { defineConfig } from 'vite'
 import path from 'path'
 import typescript from '@rollup/plugin-typescript'
+import react from '@vitejs/plugin-react'
 import package_ from './package.json'
 
-export default defineConfig(({ mode }): UserConfig => {
+export default defineConfig(({ mode }) => {
   const isProduction = mode === 'production'
   return {
     build: {
@@ -22,6 +23,15 @@ export default defineConfig(({ mode }): UserConfig => {
           })
         ]
       }
-    }
+    },
+    test: {
+      global: true,
+      environment: 'jsdom',
+      setupFiles: './tests/jest-setup.ts',
+      reporters: 'dot'
+    },
+    plugins: [
+      react()
+    ]
   }
 })

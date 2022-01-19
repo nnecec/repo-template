@@ -14,6 +14,6 @@
     "skipLibCheck": true,
     "outDir": "./dist"
   },
-  "include": ["src", "types", "./jest-setup.ts"],
+  "include": ["src", "types", "./tests/jest-setup.ts"],
   "exclude": ["node_modules", "./src/**/__tests__/*"]
 }
