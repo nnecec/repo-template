@@ -4,6 +4,7 @@ module.exports = {
     es2021: true
   },
   extends: [
+    'plugin:prettier/recommended',
     'plugin:unicorn/recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',

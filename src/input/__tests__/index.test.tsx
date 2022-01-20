@@ -12,7 +12,9 @@ describe('Components: Input', () => {
     expect(demo1.getByDisplayValue('Hello, world!')).toBeInTheDocument()
     demo1.unmount()
 
-    const demo2 = render(<Input defaultValue="Hello, world!" value="Hello, nnecec!" />)
+    const demo2 = render(
+      <Input defaultValue="Hello, world!" value="Hello, nnecec!" />
+    )
     expect(demo2.getByDisplayValue('Hello, nnecec!')).toBeInTheDocument()
     demo2.unmount()
   })
@@ -24,9 +26,13 @@ describe('Components: Input', () => {
       argumentEventObject = event
       argumentEventObjectValue = event.target.value
     }
-    const { getByDisplayValue, getByTestId } = render(<Input onChange={onChange} data-testid="input" />)
+    const { getByDisplayValue, getByTestId } = render(
+      <Input onChange={onChange} data-testid="input" />
+    )
     expect(getByTestId('input')).toBeInTheDocument()
-    fireEvent.change(getByTestId('input'), { target: { value: 'changedValue' } })
+    fireEvent.change(getByTestId('input'), {
+      target: { value: 'changedValue' }
+    })
     expect(argumentEventObject.type).toBe('change')
     expect(argumentEventObjectValue).toBe('changedValue')
 
@@ -36,7 +42,13 @@ describe('Components: Input', () => {
   it('onKeyDown', () => {
     const onPressEnter = fn()
     const onKeyDown = fn()
-    const { getByTestId } = render(<Input onPressEnter={onPressEnter} onKeyDown={onKeyDown} data-testid="input" />)
+    const { getByTestId } = render(
+      <Input
+        onPressEnter={onPressEnter}
+        onKeyDown={onKeyDown}
+        data-testid="input"
+      />
+    )
 
     fireEvent.keyDown(getByTestId('input'), { key: 'Enter', code: 'Enter' })
     expect(onPressEnter).toBeCalledWith(
