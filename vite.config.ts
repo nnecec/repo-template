@@ -16,7 +16,9 @@ export default defineConfig(({ mode }) => {
         fileName: 'index'
       },
       rollupOptions: {
-        external: package_.dependencies ? Object.keys(package_.dependencies) : undefined,
+        external: package_.dependencies
+          ? Object.keys(package_.dependencies)
+          : undefined,
         plugins: [
           typescript({
             tsconfig: 'tsconfig.json'
@@ -30,8 +32,6 @@ export default defineConfig(({ mode }) => {
       setupFiles: './tests/jest-setup.ts',
       reporters: 'dot'
     },
-    plugins: [
-      react()
-    ]
+    plugins: [react()]
   }
 })
