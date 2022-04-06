@@ -36,8 +36,8 @@ then it'll be your repository totally.
 
   ```json
   "peerDependencies": {
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   ```
 
