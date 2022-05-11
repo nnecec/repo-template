@@ -1,4 +1,3 @@
-import { describe, expect, it, fn } from 'vitest'
 import { fireEvent, render } from '@testing-library/react'
 import { Input } from '..'
 
@@ -40,8 +39,8 @@ describe('Components: Input', () => {
   })
 
   it('onKeyDown', () => {
-    const onPressEnter = fn()
-    const onKeyDown = fn()
+    const onPressEnter = jest.fn()
+    const onKeyDown = jest.fn()
     const { getByTestId } = render(
       <Input
         onPressEnter={onPressEnter}

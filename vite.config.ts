@@ -5,10 +5,9 @@ import react from '@vitejs/plugin-react'
 import package_ from './package.json'
 
 export default defineConfig(({ mode }) => {
-  const isProduction = mode === 'production'
   return {
     build: {
-      sourcemap: isProduction ? 'hidden' : 'inline',
+      sourcemap: 'hidden',
       target: 'esnext',
       lib: {
         entry: path.resolve(__dirname, 'src/index.tsx'),
@@ -16,21 +15,16 @@ export default defineConfig(({ mode }) => {
         fileName: 'index'
       },
       rollupOptions: {
-        external: package_.dependencies
-          ? Object.keys(package_.dependencies)
-          : undefined,
+        external: [
+          ...Object.keys(package_.dependencies),
+          ...Object.keys(package_.peerDependencies)
+        ],
         plugins: [
           typescript({
             tsconfig: 'tsconfig.json'
           })
         ]
       }
-    },
-    test: {
-      global: true,
-      environment: 'jsdom',
-      setupFiles: './tests/jest-setup.ts',
-      reporters: 'dot'
     },
     plugins: [react()]
   }
